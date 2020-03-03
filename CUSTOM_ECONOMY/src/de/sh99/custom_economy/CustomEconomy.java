@@ -27,6 +27,9 @@ public class CustomEconomy extends JavaPlugin implements Economy
     {
         VaultX vaultX = VaultX.getRuntimeInstance();
         vaultX.registerEnvironment(this);
+
+        //This makes sure if there is another economy choosen by user that this one gets enabled instead of yours.
+        Economy economy = (Economy) vaultX.getEnvironmental(Economy.class);
     }
 
     private Connection getConnection()
