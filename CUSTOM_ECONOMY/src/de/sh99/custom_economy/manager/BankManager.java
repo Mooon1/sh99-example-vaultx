@@ -1,13 +1,12 @@
 package de.sh99.custom_economy.manager;
 
 import com.sun.istack.internal.NotNull;
-import de.sh99.vault.economy.Bank;
 import org.bukkit.World;
 
 import java.sql.Connection;
 import java.util.UUID;
 
-public class BankManager implements Bank
+public class BankManager implements de.sh99.vaultx.economy.BankManager
 {
     private Connection con;
 

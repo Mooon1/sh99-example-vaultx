@@ -5,7 +5,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.UUID;
 
-public class BalanceManager implements de.sh99.vault.economy.BalanceManager
+public class BalanceManager implements de.sh99.vaultx.economy.BalanceManager
 {
     private FileConfiguration storage;
 

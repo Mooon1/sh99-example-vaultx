@@ -3,9 +3,9 @@ package de.sh99.custom_economy;
 import de.sh99.custom_economy.manager.BalanceManager;
 import de.sh99.custom_economy.manager.BankManager;
 import de.sh99.custom_economy.provider.ExampleVaultXProvider;
-import de.sh99.vault.VaultX;
-import de.sh99.vault.env.Economy;
-import de.sh99.vault.provider.EconomyProvider;
+import de.sh99.vaultx.VaultX;
+import de.sh99.vaultx.env.Economy;
+import de.sh99.vaultx.provider.EconomyProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.Connection;

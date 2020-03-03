@@ -1,12 +1,12 @@
 package de.sh99.need_existing_economy;
 
-import de.sh99.vault.Environment;
-import de.sh99.vault.VaultX;
+import de.sh99.vaultx.Environment;
+import de.sh99.vaultx.VaultX;
 
-import de.sh99.vault.economy.BalanceManager;
-import de.sh99.vault.economy.BankManager;
-import de.sh99.vault.env.Economy;
-import de.sh99.vault.provider.EconomyProvider;
+import de.sh99.vaultx.economy.BalanceManager;
+import de.sh99.vaultx.economy.BankManager;
+import de.sh99.vaultx.env.Economy;
+import de.sh99.vaultx.provider.EconomyProvider;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -38,7 +38,7 @@ public class NeedExistingEconomy extends JavaPlugin
 
         Economy economy = (Economy) env;
 
-        EconomyProvider economyProvider = economy.declaredProvider();
+        EconomyProvider economyProvider = ((Economy) env).declaredProvider();
 
         //TODO: handle this in VaultX when no economyProvider is defined.
         if(null == economyProvider){
