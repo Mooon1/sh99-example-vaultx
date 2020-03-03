@@ -1,17 +1,17 @@
 package de.sh99.custom_economy.manager;
 
-import com.sun.istack.internal.NotNull;
-import org.bukkit.configuration.file.FileConfiguration;
-
 import java.util.UUID;
 
-public class BalanceManager implements de.sh99.vaultx.economy.BalanceManager
+public class ExampleBalanceManager implements de.sh99.vaultx.manager.BalanceManager
 {
-    private FileConfiguration storage;
+    @Override
+    public boolean isEnabled() {
+        return false;
+    }
 
-    public BalanceManager(@NotNull FileConfiguration storage)
-    {
-        this.storage = storage;
+    @Override
+    public boolean setEnabled() {
+        return false;
     }
 
     @Override

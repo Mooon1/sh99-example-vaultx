@@ -1,18 +1,18 @@
 package de.sh99.custom_economy.manager;
 
-import com.sun.istack.internal.NotNull;
 import org.bukkit.World;
-
-import java.sql.Connection;
 import java.util.UUID;
 
-public class BankManager implements de.sh99.vaultx.economy.BankManager
+public class ExampleBankManager implements de.sh99.vaultx.manager.BankManager
 {
-    private Connection con;
+    @Override
+    public boolean isEnabled() {
+        return false;
+    }
 
-    public BankManager(@NotNull Connection con)
-    {
-        this.con = con;
+    @Override
+    public boolean setEnabled() {
+        return false;
     }
 
     @Override

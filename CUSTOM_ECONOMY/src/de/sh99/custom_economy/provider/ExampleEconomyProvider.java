@@ -1,8 +1,8 @@
 package de.sh99.custom_economy.provider;
 
 import com.sun.istack.internal.NotNull;
-import de.sh99.vaultx.economy.BalanceManager;
-import de.sh99.vaultx.economy.BankManager;
+import de.sh99.vaultx.manager.BalanceManager;
+import de.sh99.vaultx.manager.BankManager;
 import de.sh99.vaultx.provider.EconomyProvider;
 
 /**
@@ -11,13 +11,13 @@ import de.sh99.vaultx.provider.EconomyProvider;
  * BalanceManager: Just should store data in a file storage so it gains a FileConfiguration to its constructor instead of SQL.
  * BankManager: This should be stored on SQL instead of file so there is a Connection given over the constructor.
  */
-public class ExampleVaultXProvider implements EconomyProvider
+public class ExampleEconomyProvider implements EconomyProvider
 {
     private BalanceManager balanceManager;
 
     private BankManager bankManager;
 
-    public ExampleVaultXProvider(
+    public ExampleEconomyProvider(
             @NotNull BalanceManager balanceManager,
             @NotNull BankManager bankManager
     ) {
