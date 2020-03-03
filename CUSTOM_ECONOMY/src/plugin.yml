@@ -1,8 +1,8 @@
-name: "ExampleVaultX"
+name: "CustomEconomy"
 author: "Sh99"
 version: "1.0.0"
 api-version: "1.15"
 description: "Just an example to show how implementation of VaultX actually works."
-main: de.sh99.example_vaultx.ExampleVaultXPlugin
+main: de.sh99.custom_economy.CustomEconomy
 depend:
   - VaultX

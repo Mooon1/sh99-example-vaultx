@@ -1,8 +1,8 @@
-name: "ExampleVaultX"
+name: "NeedExistingEconomy"
 author: "Sh99"
 version: "1.0.0"
 api-version: "1.15"
 description: "Just an example to show how implementation of VaultX actually works."
-main: de.sh99.example_vaultx.ExampleVaultXPlugin
+main: de.sh99.need_existing_economy.NeedExistingEconomy
 depend:
   - VaultX

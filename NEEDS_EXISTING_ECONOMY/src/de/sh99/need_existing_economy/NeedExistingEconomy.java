@@ -1,9 +1,10 @@
-package de.sh99.registered_as_economy;
+package de.sh99.need_existing_economy;
 
 import de.sh99.vault.Environment;
 import de.sh99.vault.VaultX;
-import de.sh99.vault.economy.Balance;
-import de.sh99.vault.economy.Bank;
+
+import de.sh99.vault.economy.BalanceManager;
+import de.sh99.vault.economy.BankManager;
 import de.sh99.vault.env.Economy;
 import de.sh99.vault.provider.EconomyProvider;
 import org.bukkit.Bukkit;
@@ -17,7 +18,7 @@ import java.sql.Connection;
  *
  * So this is the steps you access the eco plugins provider.
  */
-public class RegisteredAsEconomy extends JavaPlugin
+public class NeedExistingEconomy extends JavaPlugin
 {
 
     @Override
@@ -44,8 +45,8 @@ public class RegisteredAsEconomy extends JavaPlugin
             return;
         }
 
-        Balance balance = economyProvider.getBalanceManager();
-        Bank bank = economyProvider.getBankManager();
+        BalanceManager balance = economyProvider.getBalanceManager();
+        BankManager bank = economyProvider.getBankManager();
 
         Player p = Bukkit.getPlayer("Sh99");
 

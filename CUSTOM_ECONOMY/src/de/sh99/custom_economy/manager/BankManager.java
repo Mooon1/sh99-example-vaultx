@@ -1,4 +1,4 @@
-package de.sh99.needs_vault.manager;
+package de.sh99.custom_economy.manager;
 
 import com.sun.istack.internal.NotNull;
 import de.sh99.vault.economy.Bank;

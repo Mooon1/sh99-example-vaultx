@@ -1,8 +1,8 @@
-package de.sh99.needs_vault;
+package de.sh99.custom_economy;
 
-import de.sh99.needs_vault.manager.BalanceManager;
-import de.sh99.needs_vault.manager.BankManager;
-import de.sh99.needs_vault.provider.ExampleVaultXProvider;
+import de.sh99.custom_economy.manager.BalanceManager;
+import de.sh99.custom_economy.manager.BankManager;
+import de.sh99.custom_economy.provider.ExampleVaultXProvider;
 import de.sh99.vault.VaultX;
 import de.sh99.vault.env.Economy;
 import de.sh99.vault.provider.EconomyProvider;
@@ -15,7 +15,7 @@ import java.sql.Connection;
  * VaultX creates a local-user firewall where you can enable/disable each provider you want. (A provider is for example iConomy
  * or Essentials).
  */
-public class NeedsVault extends JavaPlugin implements Economy
+public class CustomEconomy extends JavaPlugin implements Economy
 {
     @Override
     public EconomyProvider declaredProvider() {

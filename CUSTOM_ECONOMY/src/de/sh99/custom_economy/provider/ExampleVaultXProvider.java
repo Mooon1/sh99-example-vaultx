@@ -1,8 +1,8 @@
-package de.sh99.needs_vault.provider;
+package de.sh99.custom_economy.provider;
 
 import com.sun.istack.internal.NotNull;
-import de.sh99.needs_vault.manager.BalanceManager;
-import de.sh99.needs_vault.manager.BankManager;
+import de.sh99.custom_economy.manager.BalanceManager;
+import de.sh99.custom_economy.manager.BankManager;
 import de.sh99.vault.provider.EconomyProvider;
 
 /**
